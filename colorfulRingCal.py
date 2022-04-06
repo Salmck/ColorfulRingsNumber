@@ -3,7 +3,6 @@
 # of different bracelets with n beads painted in m colors        #
 ##################################################################
 
-# r = n / k * c = n / (gcd * k') * c
 m = 3
 n = 6
 
