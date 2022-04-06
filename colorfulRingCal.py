@@ -6,8 +6,13 @@
 m = 3
 n = 6
 
+# def gcd(a,b):
+    # return gcd(b, a%b) if b else a
+
 def gcd(a,b):
-    return gcd(b, a%b) if b else a
+    while b:
+        a, b = b, a % b
+    return a
 
 def Bumside(m, n):
     G = n*2
@@ -23,7 +28,7 @@ def Bumside(m, n):
     return sg // G
     
 print(Bumside(m, n))
-print(m**n, Bumside(m, n), m**n/Bumside(m, n))
+# print(m**n, Bumside(m, n), m**n/Bumside(m, n))
 
 # A ganerator to ganerate all possible bracelets
 def ganerate(m, n):
